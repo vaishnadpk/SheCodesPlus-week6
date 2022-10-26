@@ -1,0 +1,40 @@
+.label {
+  color: rgb(43, 115, 192);
+}
+.container {
+  border: 1px solid rgb(43, 115, 192);
+  margin: 100px;
+  width: 50%;
+  min-width: 300px;
+  max-width: 600px;
+  padding: 20px;
+  color: rgb(43, 115, 192);
+}
+.headspace {
+  padding: 5px;
+}
+.citysearch {
+  padding: 10px;
+  margin: 10px auto;
+  width: 50%;
+  border: 1px solid rgb(43, 115, 192);
+}
+h4,
+h5 {
+  text-align: center;
+}
+.grid,
+.grid2 {
+  padding: 10px;
+}
+.degrees {
+  font-size: large;
+  position: relative;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+#description {
+  text-align: left;
+}

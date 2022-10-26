@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather forecast</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/7c0f033481.js"
+      crossorigin="anonymous"  
+    ></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="label">
+        <em
+          ><a
+            href="https://www.smhi.se/en/weather/q/Stockholm/2673730"
+            target="_blank"
+            class="headspace"
+            >Stockholm
+          </a>
+          <a
+            href="https://www.smhi.se/en/weather/q/G%C3%B6teborg/2711537"
+            target="_blank"
+            class="headspace"
+            >Göteborg
+          </a>
+          <a
+            href="https://www.smhi.se/en/weather/q/Malm%C3%B6/2692969"
+            target="_blank"
+            class="headspace"
+            >Malmö
+          </a>
+          <a
+            href="https://www.smhi.se/en/weather/q/Lund/2693678"
+            target="_blank"
+            class="headspace"
+            >Lund
+          </a>
+        </em>
+      </div>
+      <form id="inputForm">
+        <input type="text" placeholder="Enter a city" class="citysearch" autocomplete="off" autofocus="on" id="searchcity">
+        <button type="submit" class="btn btn-info" value="search">Search</button>
+        <button type="button" id="currentbtn" class="btn btn-success">Current</button>
+      </form>
+
+      <h1 id="cityName">Helsingborg</h1>
+      <h3><span id="dayAndTime"></span></h3>
+      <h4 id="description">Clear</h4>
+
+      <div class="grid">
+        <div class="row">
+          <div class="col-6">
+            <h1><i class="fa-solid fa-cloud-sun-rain"></i> <span id="temperature">12</span> <sup id="celsius" class="degrees">°C|</sup><sup id="fahrenheit" class="degrees">°F</sup>
+            </h1>
+          </div>
+          
+        </div>
+      </div>
+    
+
+    </div>
+      
+    
+      
+    </div>
+  </div>
+  <script src="./app.js"></script>
+  </body>
+</html>
