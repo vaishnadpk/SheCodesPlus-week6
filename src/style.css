@@ -3,7 +3,7 @@
 }
 .container {
   border: 1px solid rgb(43, 115, 192);
-  margin: 100px;
+  margin: 100px 100px 5px;
   width: 50%;
   min-width: 300px;
   max-width: 600px;
@@ -37,4 +37,9 @@ a {
 }
 #description {
   text-align: left;
+}
+p {
+  margin-left: 70px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(69, 68, 68);
 }
